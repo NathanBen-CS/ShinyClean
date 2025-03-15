@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.hidden {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown label {
+    font-family: "Nunito Sans", "arial";
+    font-weight: bold;
+}
+
+.dropdown button {
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Nunito Sans", "arial";
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown button:hover {
+    background-color: #b30000;
+    color:white;
+    transform: translateY(-2px);
+}
+
+.dropdown button:active {
+    background-color: #ff0000;
+    transform: translateY(0);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+}
+
+.dropdown-content .addons-label {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-content .addon-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    flex-direction: row-reverse; /* Flip the order */
+    position: relative;
+    left: 0px;
+}
+
+.dropdown-content .addon-item label {
+    width: 150px; /* Adjust width based on content */
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.dropdown-content .addon-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+input.checkbox {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: red;
+    color: white;
+}
+
+.entireQuote{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+    min-height: 100vh;
+    background: url('/public/r8.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", "arial";
+    overflow:hidden;
+    flex-direction: horizontal; /* Add this line */
+}
+
+/* Container */
+.quote {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+    min-height: 100vh;
+
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", "arial";
+    overflow:hidden;
+    flex-direction: column; /* Add this line */
+}
+
+.services{
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    list-style:inside;
+
+    li:empty {
+        list-style-type: none;
+        padding-top: 20px; /* Adjust the padding as needed */
+    }
+}
+
+.bannerQ{
+    height:360px;
+    overflow: hidden;
+    background-image: url('/public/banner3.png');
+    background-size: cover;
+}
+
+.quote textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    overflow: hidden;
+    min-height: 30px; /* Set a minimum height */
+}
+
+.terms{
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:390px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.qTitle{
+    position:relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Nunito Sans";
+    top:145px;
+}
+
+.qCap{
+    position:relative;
+    text-align: center;
+    color: red;
+    font-weight: 300;
+    font-size: large;
+    font-family: "Nunito Sans";
+    top:185px;
+    text-decoration:double;
+}
+
+.bannerBox{
+    font-family: 'Nunito Sans';
+    color: black;
+    width: 420px;
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    opacity: 0.7
+}
+
+.instCap{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Form styling */
+.quote form {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Form elements styling */
+.quote form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.quote form input,
+.quote form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #ff0000;
+}
+
+.quote form input:focus,
+.quote form select:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+
+.quote form select {
+    appearance: none;
+    background: #ffffff url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 4 5%22%3E%3Cpath fill%3D%22%23007bff%22 d%3D%22M2 0L0 2h4L2 0zm0 5L0 3h4L2 5z%22/%3E%3C/svg%3E') no-repeat right 10px center;
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.quote form input[type="text"],
+.quote form input[type="email"],
+.quote form input[type="tel"] {
+    padding-right: 30px; /* to avoid text overflow with background image */
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #b30000;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    background-color: #ff0000;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .quote form {
+        padding: 20px;
+    }
+
+    .quote form input,
+    .quote form select {
+        font-size: 14px;
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column; /* Add this line */
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Adjust gap for vertical spacing */
+        min-height: 100vh;
+        background: url('/public/r8.jpg') no-repeat center center fixed;
+        background-size: cover;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Nunito Sans", "arial";
+        overflow: hidden;
+    }
+
+    .qTitle{
+        position:relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size: 50px;
+        font-family: "Nunito Sans";
+        top:15px;
+    }
+    
+    .qCap{
+        position:relative;
+        text-align: center;
+        color: red;
+        font-weight: 300;
+        font-size: large;
+        font-family: "Nunito Sans";
+        top:45px;
+        text-decoration:double;
+    }
+ 
+    .entireQuote{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0px;
+        min-height: 100vh;
+        background: url('/public/r8.jpg') no-repeat center center fixed;
+        background-size: cover;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Nunito Sans", "arial";
+        overflow:hidden;
+        flex-direction: column; /* Add this line */
+    }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+
+    .instCap{
+
+    }
+
+    .quote form {
+        padding: 20px;
+    }
+
+    .quote form input,
+    .quote form select {
+        font-size: 14px;
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column; /* Add this line */
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Adjust gap for vertical spacing */
+        min-height: 100vh;
+        background: url('/public/r8.jpg') no-repeat center center fixed;
+        background-size: cover;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Nunito Sans", "arial";
+        overflow: hidden;
+    }
+
+    .qTitle{
+        position:relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size: 50px;
+        font-family: "Nunito Sans";
+    }
+    
+    .qCap{
+        position:relative;
+        text-align: center;
+        color: red;
+        font-weight: 300;
+        font-size: large;
+        font-family: "Nunito Sans";
+        text-decoration:double;
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown label {
+        font-family: "Nunito Sans", "arial";
+        font-weight: bold;
+        font-size: xx-small;
+    }
+
+    .dropdown button {
+        background-color: #ffffff;
+        color: rgb(255, 0, 0);
+        padding: 5px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Nunito Sans", "arial";
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .dropdown button:hover {
+        background-color: #b30000;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .dropdown button:active {
+        background-color: #ff0000;
+        transform: translateY(0);
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.7);
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0px;
+    }
+
+    .dropdown-content .addons-label {
+        display: block;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .dropdown-content .addon-item {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        color: white;
+        position: relative;
+        flex-direction: row-reverse; /* Flip the order */
+        left: 80px; /* Reset left position */
+    }
+
+    .dropdown-content .addon-item label {
+        width: auto; /* Allow width to adjust based on content */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .dropdown-content .addon-item input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: grid;
+    }
+}

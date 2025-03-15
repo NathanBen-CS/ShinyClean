@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.about{
+    background-color: black;
+    overflow: hidden;
+}
+
+.bannerA{
+    height:360px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('/public/banner.png');
+    background-size: cover;
+}
+
+.aboutCon{
+    margin-top: 50px;
+    padding-bottom:228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.aTitle{
+    position:relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Nunito Sans";
+    top:145px;
+}
+
+.aCap{
+    position:relative;
+    text-align: center;
+    color: red;
+    font-weight: 300;
+    font-size: large;
+    font-family: "Nunito Sans";
+    top:185px;
+    text-decoration:double;
+}
+
+.aboutDes {
+    width: 500px;
+    color: white;
+}
+
+.aboutDes b{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Nunito Sans';
+    font-stretch:condensed;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .aboutCon{
+        margin-top: 50px;
+        padding-bottom:228px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .aboutDes {
+        width: 300px;
+        color: white;
+    }
+
+    .aTitle{
+        position:relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size: 50px;
+        font-family: "Nunito Sans";
+        top:80px;
+    }
+    
+    .aCap{
+        position:relative;
+        text-align: center;
+        color: red;
+        font-weight: 300;
+        font-size: large;
+        font-family: "Nunito Sans";
+        top:125px;
+        text-decoration:double;
+        width:90%;
+        left: 5%;
+    }
+}

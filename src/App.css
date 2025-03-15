@@ -1,0 +1,50 @@
+/* Example of your existing footer CSS */
+.footer {
+  background-color: rgb(139, 0, 0);
+  height: 20px;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  gap: auto;
+  padding: 25px;
+}
+
+.footer a {
+  position: relative;
+  right: 25%;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: 'Nunito Sans';
+  font-stretch: condensed;
+  color: white;
+  align-self: center;
+}
+
+.footer img {
+  width: 50%;
+  align-self: center;
+  position: relative;
+  top: 10px;
+}
+
+/* Router transition styles */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms, transform 300ms;
+}

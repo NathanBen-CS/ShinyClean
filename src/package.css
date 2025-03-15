@@ -1,0 +1,363 @@
+/* Your existing CSS */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.pack {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+     /* Prevent horizontal scrolling */
+}
+
+.packCap {
+    position: relative;
+    text-align: center;
+    color: red;
+    font-weight: 300;
+    font-size: large;
+    font-family: "Nunito Sans";
+    top: -215px;
+    text-decoration: double;
+}
+
+.mobileCap {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Nunito Sans";
+    top: -255px;
+}
+
+.bannerP {
+    margin-bottom: 300px;          /* Center the image horizontally */
+    height:360px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('/public/banner1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.packages .exWrap {
+    /*background-color: rgb(164, 226, 211);*/
+    background-color: #F8F0E3;
+    border-style: solid;
+    border-color: rgb(190,188,190);
+    border-width: 2px;
+    width: 400px;
+    transition-duration: 200ms;
+    padding-bottom: 100px;
+}
+
+.packages .exWrap b {
+    position: relative;
+    left: -15%;
+    top: 60px;
+}
+
+.packages .ex {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.packages .prices {
+    margin-top: 50px;
+    width: 400px;
+    list-style-type: none;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.packages {
+    margin-top: -150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.packages .inWrap {
+    /*background-color: rgb(178, 177, 240);*/
+    /*background-color: #b2Ac88;*/
+    background-color: #bdb897;
+
+    border-style: solid;
+    border-color: rgb(190,188,190);
+    border-width: 2px;
+    width: 400px;
+    transition-duration: 200ms;
+    padding-bottom: 123px;
+}
+
+.packages .inWrap b {
+    position: relative;
+    left: -17.5%;
+    top: 60px;
+}
+
+.packages .in {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.packages .goWrap {
+    /*background-color: rgb(238, 248, 173);*/
+    background-color: #000000;;
+    color: #F8F0E3;
+    border-style: solid;
+    border-color: #808080;
+    border-width: 2px;
+    width: 400px;
+    transition-duration: 200ms;
+    padding-bottom: 185px;
+}
+
+.packages .goWrap b {
+    position: relative;
+    left: -17.5%;
+    top: 60px;
+}
+
+.packages .go {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.packages .most {
+    font-family: "Italianno", "Nunito Sans";
+    font-size: 50px;
+    color: #F8F0E3;
+}
+
+.plWrap {
+    background-color: rgb(211,169,106);
+    width: 1208px;
+    transition-duration: 200ms;
+    list-style: none;
+    margin: auto;
+    position: relative;
+    top: -85px;
+    padding-top: 40px;
+    height: 350px;
+    border-style: solid;
+    border-color: rgb(190,188,190);
+    border-width: 2px;
+}
+
+.plWrap b {
+    position: relative;
+    left: 185px;
+    top: 60px;
+}
+
+.pl {
+    list-style-type: none;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    top: -300px;
+    left: 400px;
+}
+
+.platLogo {
+    position: relative;
+    text-align: center;
+}
+
+.platPrice {
+    position: relative;
+    left: 235px;
+}
+
+.plPrices {
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+
+.upgrTitle{
+    color: white;
+    text-align: center;
+}
+
+#addonTypes {
+    width: 1208px;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table */
+    padding: 20px;
+}
+
+.addLogo{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    top: 150px;
+    z-index: 1;
+}
+
+#addonTypes th,
+#addonTypes td {
+    padding: 20px;
+}
+
+#addonTypes th {
+/* Adjust header background color as needed */
+    font-weight: bold;
+    text-align: center;
+}
+
+#addonTypes td {
+    text-align: center;
+}
+
+#addonTypes td:first-child {
+    text-align: left;
+}
+
+
+.addBox {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    border: 2px solid rgb(160, 159, 160); /* Adjust border color as needed */
+    display: grid;
+    text-align: center;
+    gap: 0px;
+    color: #000000;
+    background-color: rgb(190, 188, 190); /* Adjust border color as needed */ /* Light beige */
+    width: 1208px;
+    margin-top: 325px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+
+  .pTitle{
+    position:relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Nunito Sans";
+    top:145px;
+}
+
+.pCap{
+    position:relative;
+    text-align: center;
+    color: red;
+    font-weight: 300;
+    font-size: large;
+    font-family: "Nunito Sans";
+    top:185px;
+    text-decoration:double;
+}
+
+@media screen and (max-width: 1000px) {
+    .packCap{
+        position: relative;
+        top:-225px;
+    }
+
+    .mobileCap{
+        position: relative;
+        top: -250px;
+    }
+
+    .platLogo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .platPrice {
+        position: absolute;
+        text-align: center;
+        top:100px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .plPrices {
+        text-align: center;
+        position: relative;
+        top: 0;
+    }
+
+    .plWrap {
+        width: 100%; /* Full width */
+        transition-duration: 200ms;
+        padding: 20px; /* Add some padding */
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        gap:50px;
+        height:700px;
+        width:360px;
+    }
+
+    .plWrap b {
+        position: relative;
+        left: -70px;
+        top:7px;
+    }
+
+    .pl {
+        list-style-type: none;
+        margin-top: 30px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .addBox {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        width: auto;
+        margin-top: 325px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 150px;
+        padding-bottom: 50px;
+      }
+}
+
+@media screen and (max-width: 400px) {
+    .pTitle{
+        position:relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size: 50px;
+        font-family: "Nunito Sans";
+        top:105px;
+    }
+
+    .pCap{
+        position:relative;
+        text-align: center;
+        color: red;
+        font-weight: 300;
+        font-size: large;
+        font-family: "Nunito Sans";
+        top:145px;
+        text-decoration:double;
+    }
+}
